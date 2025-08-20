@@ -96,7 +96,7 @@ public struct Shimmer: ViewModifier {
     }
 
     public func body(content: Content) -> some View {
-        applyingGradient(to: content)
+        content
             .mask(
                 LinearGradient(
                     gradient: isActive ? gradient : .transparent,
